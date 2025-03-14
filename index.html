@@ -1,88 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pestañas</title>
 </head>
-
 <body>
     <main>
-        <header> <button>
-                <h2>Calvo sorprendido</h2>
-            </button>
-            <button>
-                <h2>San Nicolas sin dinero</h2>
-            </button>
-            <button>
-                <h2>Bigote Cuidado</h2>
-            </button> 
-            <button>
-                <h2>Olor a Tabaco</h2>
-            </button>
-        </header>
-        <div id="pes1">
-
-            <div class="contenido"><div class="imagenes "><img src="img\foucault.jpg" alt="Michel Foucault"  class="imagenes"></div>
-                <div>
-                    <h2>Michel Foucault (1926-1984)</h2>
-                </div>
-                <div>
-                    <p>Filósofo francés conocido por sus estudios sobre el poder, el conocimiento y la subjetividad. Sus
-                        obras, como Vigilar y castigar y Historia de la sexualidad, analizan cómo las instituciones
-                        disciplinarias moldean a los individuos. Criticó las estructuras de control en la sociedad y
-                        exploró la relación entre el saber y la autoridad.</p>
-                </div>
+        <div class="pestanias-contenedor">
+            <div class="pestanias">
+                <header>
+                    <button class="pestaniaBoton pestania-activada" data-tab="pes1">
+                        <h2>Calvo sorprendido</h2>
+                    </button>
+                    <button class="pestaniaBoton" data-tab="pes2">
+                        <h2>San Nicolas sin dinero</h2>
+                    </button>
+                    <button class="pestaniaBoton" data-tab="pes3">
+                        <h2>Bigote Cuidado</h2>
+                    </button>
+                    <button class="pestaniaBoton" data-tab="pes4">
+                        <h2>Olor a Tabaco</h2>
+                    </button>
+                </header>
             </div>
         </div>
-        <div id="pes2">
-
-            <div class="contenido"><div class="imagenes "><img src="img\marx.png" alt="Karl Marx" class="imagenes"></div>
-                <div>
-                    <h2>Karl Marx (1818-1883)</h2>
-                </div>
-                <div>
-                    <p>Filósofo, economista y revolucionario alemán, fundador del materialismo histórico y del comunismo
-                        moderno. Su obra El capital y el Manifiesto del Partido Comunista, escrito con Engels, sentaron
-                        las bases del marxismo. Analizó la lucha de clases y propuso la abolición de la propiedad
-                        privada para alcanzar una sociedad sin clases.</p>
-                </div>
+        <div class="contenido visible" id="pes1">
+            <div class="imagenes"><img src="img/foucault.jpg" alt="Michel Foucault" class="imagenes"></div>
+            <div class="texto">
+                <h2>Michel Foucault (1926-1984)</h2>
+                <p>Filósofo francés, experto en analizar cómo el poder te controla incluso cuando crees que eres libre. Se rumorea que si dices "vigilar y castigar" tres veces frente al espejo, aparece Foucault para explicarte por qué el panóptico es el origen de todos tus problemas. Desconfiaba de las instituciones… y con razón.</p>
             </div>
         </div>
-        <div id="pes3">
-
-            <div class="contenido"> <div class="imagenes "><img src="img\Nietzsche.jpg" alt="Friedrich Nietzsche" class="imagenes"></div>
-                <div>
-                    <h2>Friedrich Nietzsche (1844-1900)</h2>
-                </div>
-                <div>
-                    <p>Filósofo alemán que cuestionó la moral tradicional y proclamó la muerte de Dios. Sus obras, como
-                        Así habló Zaratustra y Más allá del bien y del mal, introdujeron conceptos como el superhombre y
-                        la voluntad de poder. Criticó el cristianismo y el nihilismo, influyendo en la filosofía
-                        existencialista y posmoderna.</p>
-                </div>
-
+        
+        <div class="contenido" id="pes2">
+            <div class="imagenes"><img src="img/marx.png" alt="Karl Marx" class="imagenes"></div>
+            <div class="texto">
+                <h2>Karl Marx (1818-1883)</h2>
+                <p>Filósofo, economista y revolucionario alemán. Inventó el comunismo moderno, pero murió sin un centavo (irónico, ¿no?). Creía que el capitalismo nos explotaría hasta convertirnos en robots de oficina. Si estuviera vivo, probablemente estaría escribiendo un libro titulado "El Capitalismo 2: La Venganza del Consumismo".</p>
             </div>
         </div>
-        <div id="pes4">
-
-            <div class="contenido"> <div class="imagenes "><img src="img\tolkien.webp" alt="J.R.R. Tolkien " class="imagenes"></div>
-                <div>
-                    <h2>J.R.R. Tolkien (1892-1973)</h2>
-                </div>
-                <div>
-                    <p>Escritor, filólogo y profesor británico, creador de la mitología de la Tierra Media. Autor de El
-                        Hobbit y El Señor de los Anillos, obras fundamentales de la literatura fantástica. Su profundo
-                        conocimiento de lenguas y mitologías influyó en su universo narrativo. Su legado sigue vivo en
-                        la cultura popular y el cine.</p>
-                </div>
+        
+        <div class="contenido" id="pes3">
+            <div class="imagenes"><img src="img/Nietzsche.jpg" alt="Friedrich Nietzsche" class="imagenes"></div>
+            <div class="texto">
+                <h2>Friedrich Nietzsche (1844-1900)</h2>
+                <p>Filósofo alemán que declaró que "Dios ha muerto", lo cual probablemente le ganó muchas miradas incómodas en reuniones familiares. Creía que la moral era para débiles y que el superhombre no se preocuparía por pagar impuestos. Murió abrazando un caballo… lo que prueba que la vida de un filósofo no es fácil.</p>
             </div>
         </div>
-
+        
+        <div class="contenido" id="pes4">
+            <div class="imagenes"><img src="img/tolkien.webp" alt="J.R.R. Tolkien" class="imagenes"></div>
+            <div class="texto">
+                <h2>J.R.R. Tolkien (1892-1973)</h2>
+                <p>Filólogo, escritor y la razón por la que todos queremos vivir en un bosque con elfos. Pasó más tiempo creando idiomas ficticios que interactuando con humanos reales. Si hoy estuviera vivo, probablemente estaría demandando a todas las franquicias de fantasía por copiar su trabajo. "Un anillo para dominarlos a todos", pero nunca dijo qué hacer si lo pierdes.</p>
+            </div>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
